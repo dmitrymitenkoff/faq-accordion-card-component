@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>FAQ Accordion Card</title>
+
+</head>
+<body>
+  <main class="site">
+    
+      <img src="./images/illustration-box-desktop.svg" alt="" class="box-desktop">
+     
+  
+    <section class="head-image">
+      <img src="/images/bg-pattern-mobile.svg" alt="" class="bg-mobile">
+      <img src="/images/bg-pattern-desktop.svg" alt="" class="bg-desktop">
+      <picture>
+        <source media="(max-width: 375px)" srcset="/images/illustration-woman-online-mobile.svg">
+        <source media="(min-width: 1440px" srcset="/images/illustration-woman-online-desktop.svg">
+          <img src="/images/illustration-woman-online-mobile.svg" alt="">
+      </picture>
+    </section>
+    
+    <section class="accordion">
+      <h1>FAQ</h1>
+      
+      <div class="accordion-item" id="question1">
+        <a class="accordion-link" href="#question1">
+          How many team members can I invite?
+          <img class="add" src="./images/icon-arrow-down.svg" alt="">
+          <img class="remove" src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <div class="answer"><p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p></div>
+      </div>
+
+      <div class="accordion-item" id="question2">
+        <a class="accordion-link" href="#question2">
+          What is the maximum file upload size?
+          <img class="add" src="./images/icon-arrow-down.svg" alt="">
+          <img class="remove" src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <div class="answer"><p>No more than 2GB. All files in your account must fit your allotted storage space.</p></div>
+      </div>
+
+      <div class="accordion-item" id="question3">
+        <a class="accordion-link" href="#question3">
+          How do I reset my password?
+          <img class="add" src="./images/icon-arrow-down.svg" alt="">
+          <img class="remove" src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <div class="answer"><p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p></div>
+      </div>
+
+      <div class="accordion-item" id="question4">
+        <a class="accordion-link" href="#question4">
+          Can I cancel my subscription?
+          <img class="add" src="./images/icon-arrow-down.svg" alt="">
+          <img class="remove" src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <div class="answer"><p>Yes! Send us a message and we’ll process your request no questions asked.</p></div>
+      </div>
+
+      <div class="accordion-item" id="question5">
+        <a class="accordion-link" href="#question5">
+          Do you provide additional support?
+          <img class="add" src="./images/icon-arrow-down.svg" alt="">
+          <img class="remove" src="./images/icon-arrow-down.svg" alt="">
+        </a>
+        <div class="answer"><p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p></div>
+      </div>
+</section>
+</main>
+<footer>
+  <div class="attribution">
+    Coded by <a href="#">Dmitry Mitenkoff</a>.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
