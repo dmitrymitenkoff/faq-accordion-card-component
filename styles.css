@@ -13,15 +13,14 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
     background: rgb(175,103,233);
     background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 90%);
-    outline: red 4px solid;
 }
 
 h1 {
@@ -45,6 +44,7 @@ h1 {
     top: 0;
     left: 4rem;
 }
+
 .bg-desktop {
     display: none;
 }
@@ -62,7 +62,6 @@ picture {
     position: absolute;
     top: -7rem;
     left: 2.5rem;
-    
 }
 
 .accordion {
@@ -74,8 +73,27 @@ picture {
     margin-bottom: 1rem;
 }
 
+
 .accordion-item:last-child {
     margin-bottom: 3rem;
+}
+
+.accordion-item:target .answer {
+    max-height: 10rem;
+}
+
+.accordion-item:target a {
+    font-weight: bold;
+    color: hsl(238, 29%, 16%);
+}
+
+.accordion-item:target .add {
+    display: none;
+}
+
+.accordion-item:target .remove {
+    display: block;
+    transform: rotate(180deg);
 }
 
 .accordion-link {
@@ -87,6 +105,10 @@ picture {
     align-items: flex-start;
     justify-content: space-between;
     padding: 1rem 0;
+}
+
+.accordion-link:hover {
+    color: hsl(14, 88%, 65%);
 }
 
 .add,
@@ -112,36 +134,19 @@ picture {
     color: hsl(240, 6%, 50%);
 }
 
-.accordion-item:target .answer {
-    max-height: 10rem;
+.attribution {
+    margin-top: 4rem;
+    font-size: 12px;
+    text-align: center;
+    color: white;
 }
-
-.accordion-item:target a {
-    font-weight: bold;
-    color: hsl(238, 29%, 16%);
-}
-
-.accordion-item:target .add {
-    display: none;
-}
-
-.accordion-item:target .remove {
-    display: block;
-    transform: rotate(180deg);
-}
-
-footer {
-    margin-top: 2rem;
+.attribution a {
+    text-decoration: none;
     color: white;
 }
 
-footer a {
-    text-decoration: none;
-    padding-bottom: 0.2rem;
-}
-
-footer a:hover {
-    border-bottom: 1px solid blue;
+.attribution a:hover {
+    border-bottom: 1px solid hsl(14, 88%, 65%);
 }
 
 @media(min-width: 1440px) {
@@ -156,12 +161,12 @@ footer a:hover {
     .bg-mobile {
         display: none;
     }
+
     .bg-desktop {
         display: inline-block;
         position: absolute;
         left: -35rem;
         top: -20rem;
-       
     }
 
     .head-image {
@@ -187,7 +192,7 @@ footer a:hover {
 
     h1 {
         text-align: left;
-        padding: 4rem 0;
+        padding: 4rem 0 2rem;
     }
 
     .accordion {
