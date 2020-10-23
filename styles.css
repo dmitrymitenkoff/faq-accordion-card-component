@@ -58,10 +58,14 @@ h1 {
     display: none;
 }
 
-picture {
+.illustration-mobile {
     position: absolute;
     top: -7rem;
     left: 2.5rem;
+}
+
+.illustration-desktop {
+    display: none;
 }
 
 .accordion {
@@ -176,7 +180,11 @@ picture {
         overflow: hidden;
     }
 
-    picture {
+    .illustration-mobile {
+        display: none;
+    }
+    .illustration-desktop {
+        display: block;
         position: absolute;
         top: 2rem;
         left: -5rem;
